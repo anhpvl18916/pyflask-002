@@ -54,7 +54,9 @@ def giaiptb1():
         str = "KoCoN"
         kq = { "tt" : str }
     return jsonify(kq)
+@app.route('/giaiptb1', methods=['GET'])
 
+    return jsonify(kq)
 class Parameters(Resource):
     def get(self, firstParam):
         return "Day la tam so " + firstParam
